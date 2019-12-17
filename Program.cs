@@ -7,7 +7,17 @@ namespace school_info
     {
         static void Main(string[] args)
         {
-            WriteLine("Hello World!");
+            WriteLine(WriteStars(42));
+        }
+
+        static string WriteStars(int reps)
+        {
+            string result = string.Empty;
+            for (int i = 0; i < reps; i++)
+            {
+                result += String.Format("*");
+            }
+            return result;
         }
     }
 }
